@@ -791,6 +791,8 @@ Shader "Mixed Reality Toolkit/Standard"
                 uvZ.x *= -axisSign.z;
 #endif
 
+
+
             // Texturing.
 #if defined(_DISABLE_ALBEDO_MAP)
                 fixed4 albedo = fixed4(1.0, 1.0, 1.0, 1.0);

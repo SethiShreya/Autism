@@ -8,19 +8,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Home.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Aural Therapy.unity
     guid: d3cf7cb225ffb5f40a434c73f0138d27
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/EMDR Therapy.unity
     guid: a02e6aa6fc335434a843f2052640fd4f
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Music Therapy.unity
     guid: cef9d1a5d8df8324f92ffa7efb6ed488
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Pathology.unity
     guid: 232765c00398a6349834860a6e62fcfa
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Puzzle.unity
     guid: fa594f95a5d33524eb85f6c0b4c2abbe
   m_configObjects:

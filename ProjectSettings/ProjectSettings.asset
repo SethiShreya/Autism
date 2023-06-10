@@ -137,10 +137,6 @@ PlayerSettings:
   preloadedAssets:
   - {fileID: 0}
   - {fileID: 11400000, guid: 09e326d53e8cb934f9634e8cdd401803, type: 2}
-  - {fileID: -6067192003451250519, guid: 7f7366bbd83dbb64587ec6fec3e560f9, type: 2}
-  - {fileID: 11400000, guid: 5ab97fee770260f47a53700375c5cd74, type: 2}
-  - {fileID: 11400000, guid: 41fdec0c200331345832e4a6bfc02795, type: 2}
-  - {fileID: -1039551967087043913, guid: 4ffd2de306366b14aae60c85ca2751c5, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -152,7 +148,7 @@ PlayerSettings:
   enableFrameTimingStats: 0
   enableOpenGLProfilerGPURecorders: 1
   useHDRDisplay: 0
-  hdrBitDepth: 0
+  D3DHDRBitDepth: 0
   m_ColorGamuts: 00000000
   targetPixelDensity: 30
   resolutionScalingMode: 0
@@ -253,7 +249,6 @@ PlayerSettings:
   useCustomLauncherGradleManifest: 0
   useCustomBaseGradleTemplate: 0
   useCustomGradlePropertiesTemplate: 0
-  useCustomGradleSettingsTemplate: 0
   useCustomProguardFile: 0
   AndroidTargetArchitectures: 2
   AndroidTargetDevices: 0
