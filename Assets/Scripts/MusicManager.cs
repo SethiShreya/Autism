@@ -6,6 +6,7 @@ public class MusicManager : MonoBehaviour
 {
     [SerializeField] GameObject initialAudioClipG;
     [SerializeField] GameObject finalAudioClipG;
+    public ParticleSystem particle;
     AudioSource initialAudioClip;
     AudioSource finalAudioClip;
     float timer = 0;
@@ -21,6 +22,7 @@ public class MusicManager : MonoBehaviour
 
     void playAudio()
     {
+        particle.Play();
         finalAudioClip.Play();
     }
 

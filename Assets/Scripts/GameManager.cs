@@ -1,11 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
     private int apple;
     private int banana;
+    public TextMeshPro appleCount;
+    public TextMeshPro bananaCount;
     [SerializeField] GameObject congratsScreen;
     [SerializeField] List<GameObject> gameObjects;
 
@@ -18,22 +21,16 @@ public class GameManager : MonoBehaviour
     public void increaseApple()
     {
         apple++;
-    }
-
-    public void decreaseApple()
-    {
-        apple--;
+        appleCount.text = apple.ToString();
     }
 
     public void increaseBanana()
     {
         banana++;
+        bananaCount.text = banana.ToString();
+
     }
 
-    public void decreaseBanana()
-    {
-        banana--;
-    }
 
     private void Update()
     {

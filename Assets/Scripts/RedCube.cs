@@ -4,19 +4,15 @@ public class RedCube : MonoBehaviour
 {
     [SerializeField] GameObject gameManager;
 
-    private void OnCollisionEnter(Collision collision)
+
+
+    private void OnTriggerEnter(Collider other)
     {
-        if (collision.transform.tag == "Apple")
+        if (other.transform.tag == "Apple")
         {
             gameManager.GetComponent<GameManager>().increaseApple();
-        }
-    }
-
-    private void OnCollisionExit(Collision collision)
-    {
-        if (collision.transform.tag == "Apple")
-        {
-            gameManager.GetComponent<GameManager>().decreaseApple();
+            Debug.Log("Apple found");
+            GameObject.Destroy(other.transform.gameObject);
         }
     }
 }

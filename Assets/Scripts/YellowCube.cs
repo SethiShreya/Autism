@@ -4,19 +4,16 @@ public class YellowCube : MonoBehaviour
 {
     [SerializeField] GameObject gameManager;
 
-    private void OnCollisionEnter(Collision collision)
+
+    private void OnTriggerEnter(Collider other)
     {
-        if (collision.transform.tag == "Banana")
+        if (other.transform.tag == "Banana")
         {
             gameManager.GetComponent<GameManager>().increaseBanana();
+            GameObject.Destroy(other.gameObject);
         }
     }
 
-    private void OnCollisionExit(Collision collision)
-    {
-        if (collision.transform.tag == "Banana")
-        {
-            gameManager.GetComponent<GameManager>().decreaseBanana();
-        }
-    }
+
+
 }
